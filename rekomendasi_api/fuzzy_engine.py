@@ -355,54 +355,101 @@ def proses_rekomendasi(df_jalur=None, preferensi_pengguna=None):
     if preferensi_pengguna:
         df_filtered = df_jalur.copy()
         filter_applied = []
-        # Filter kesulitan maksimal
-        if preferensi_pengguna.get('max_kesulitan_skala') is not None and cek_kolom(df_filtered, 'kesulitan_skala'):
-            df_filtered = df_filtered[df_filtered['kesulitan_skala'] <= preferensi_pengguna['max_kesulitan_skala']]
-            filter_applied.append(f"Kesulitan ≤ {preferensi_pengguna['max_kesulitan_skala']}")
-        # Filter keamanan minimal
-        if preferensi_pengguna.get('min_keamanan_skala') is not None and cek_kolom(df_filtered, 'keamanan_skala'):
-            df_filtered = df_filtered[df_filtered['keamanan_skala'] >= preferensi_pengguna['min_keamanan_skala']]
-            filter_applied.append(f"Keamanan ≥ {preferensi_pengguna['min_keamanan_skala']}")
-        # Filter waktu maksimal (dalam jam)
-        if preferensi_pengguna.get('max_estimasi_waktu_jam') is not None and cek_kolom(df_filtered, 'estimasi_waktu_jam'):
-            df_filtered = df_filtered[df_filtered['estimasi_waktu_jam'] <= preferensi_pengguna['max_estimasi_waktu_jam']]
-            filter_applied.append(f"Waktu ≤ {preferensi_pengguna['max_estimasi_waktu_jam']} jam")
-        # Filter ketinggian maksimal
-        if preferensi_pengguna.get('max_ketinggian_mdpl') is not None and cek_kolom(df_filtered, 'ketinggian_puncak_mdpl'):
-            df_filtered = df_filtered[df_filtered['ketinggian_puncak_mdpl'] <= preferensi_pengguna['max_ketinggian_mdpl']]
-            filter_applied.append(f"Ketinggian ≤ {preferensi_pengguna['max_ketinggian_mdpl']} mdpl")
-        # Filter ketersediaan air minimal
-        if preferensi_pengguna.get('min_ketersediaan_air') is not None and cek_kolom(df_filtered, 'ketersediaan_sumber_air_skala'):
-            df_filtered = df_filtered[df_filtered['ketersediaan_sumber_air_skala'] >= preferensi_pengguna['min_ketersediaan_air']]
-            filter_applied.append(f"Air ≥ {preferensi_pengguna['min_ketersediaan_air']}")
-        # Filter pemandangan minimal
-        if preferensi_pengguna.get('min_keindahan_pemandangan_skala') is not None and cek_kolom(df_filtered, 'keindahan_pemandangan_skala'):
-            df_filtered = df_filtered[df_filtered['keindahan_pemandangan_skala'] >= preferensi_pengguna['min_keindahan_pemandangan_skala']]
-            filter_applied.append(f"Pemandangan ≥ {preferensi_pengguna['min_keindahan_pemandangan_skala']}")
-        # Filter jaringan komunikasi minimal
-        if preferensi_pengguna.get('min_jaringan_komunikasi') is not None and cek_kolom(df_filtered, 'jaringan_komunikasi_skala'):
-            df_filtered = df_filtered[df_filtered['jaringan_komunikasi_skala'] >= preferensi_pengguna['min_jaringan_komunikasi']]
-            filter_applied.append(f"Jaringan Komunikasi ≥ {preferensi_pengguna['min_jaringan_komunikasi']}")
-        # Filter kualitas fasilitas minimal
-        if preferensi_pengguna.get('min_kualitas_fasilitas_skala') is not None and cek_kolom(df_filtered, 'kualitas_fasilitas_skala'):
-            df_filtered = df_filtered[df_filtered['kualitas_fasilitas_skala'] >= preferensi_pengguna['min_kualitas_fasilitas_skala']]
-            filter_applied.append(f"Fasilitas ≥ {preferensi_pengguna['min_kualitas_fasilitas_skala']}")
-        # Filter kualitas kemah minimal
-        if preferensi_pengguna.get('min_kualitas_kemah_skala') is not None and cek_kolom(df_filtered, 'kualitas_kemah_skala'):
-            df_filtered = df_filtered[df_filtered['kualitas_kemah_skala'] >= preferensi_pengguna['min_kualitas_kemah_skala']]
-            filter_applied.append(f"Kemah ≥ {preferensi_pengguna['min_kualitas_kemah_skala']}")
-        # Filter perlindungan angin minimal
-        if preferensi_pengguna.get('min_perlindungan_angin') is not None and cek_kolom(df_filtered, 'perlindungan_angin_kemah_skala'):
-            df_filtered = df_filtered[df_filtered['perlindungan_angin_kemah_skala'] >= preferensi_pengguna['min_perlindungan_angin']]
-            filter_applied.append(f"Perlindungan Angin ≥ {preferensi_pengguna['min_perlindungan_angin']}")
-        # Filter tingkat keamanan insiden minimal
-        if preferensi_pengguna.get('min_tingkat_keamanan_insiden') is not None and cek_kolom(df_filtered, 'tingkat_insiden_skala'):
-            df_filtered = df_filtered[df_filtered['tingkat_insiden_skala'] >= preferensi_pengguna['min_tingkat_keamanan_insiden']]
-            filter_applied.append(f"Tingkat Keamanan Insiden ≥ {preferensi_pengguna['min_tingkat_keamanan_insiden']}")
-        # Filter variasi lanskap minimal
-        if preferensi_pengguna.get('min_variasi_lanskap') is not None and cek_kolom(df_filtered, 'variasi_lanskap_skala'):
-            df_filtered = df_filtered[df_filtered['variasi_lanskap_skala'] >= preferensi_pengguna['min_variasi_lanskap']]
-            filter_applied.append(f"Variasi Lanskap ≥ {preferensi_pengguna['min_variasi_lanskap']}")
+        try:
+            # Filter kesulitan maksimal
+            if preferensi_pengguna.get('max_kesulitan_skala') is not None:
+                if cek_kolom(df_filtered, 'kesulitan_skala'):
+                    df_filtered = df_filtered[df_filtered['kesulitan_skala'] <= preferensi_pengguna['max_kesulitan_skala']]
+                    filter_applied.append(f"Kesulitan ≤ {preferensi_pengguna['max_kesulitan_skala']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'kesulitan_skala' tidak ditemukan saat filter max_kesulitan_skala", file=sys.stderr)
+            # Filter keamanan minimal
+            if preferensi_pengguna.get('min_keamanan_skala') is not None:
+                if cek_kolom(df_filtered, 'keamanan_skala'):
+                    df_filtered = df_filtered[df_filtered['keamanan_skala'] >= preferensi_pengguna['min_keamanan_skala']]
+                    filter_applied.append(f"Keamanan ≥ {preferensi_pengguna['min_keamanan_skala']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'keamanan_skala' tidak ditemukan saat filter min_keamanan_skala", file=sys.stderr)
+            # Filter waktu maksimal (dalam jam)
+            if preferensi_pengguna.get('max_estimasi_waktu_jam') is not None:
+                if cek_kolom(df_filtered, 'estimasi_waktu_jam'):
+                    df_filtered = df_filtered[df_filtered['estimasi_waktu_jam'] <= preferensi_pengguna['max_estimasi_waktu_jam']]
+                    filter_applied.append(f"Waktu ≤ {preferensi_pengguna['max_estimasi_waktu_jam']} jam")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'estimasi_waktu_jam' tidak ditemukan saat filter max_estimasi_waktu_jam", file=sys.stderr)
+            # Filter ketinggian maksimal
+            if preferensi_pengguna.get('max_ketinggian_mdpl') is not None:
+                if cek_kolom(df_filtered, 'ketinggian_puncak_mdpl'):
+                    df_filtered = df_filtered[df_filtered['ketinggian_puncak_mdpl'] <= preferensi_pengguna['max_ketinggian_mdpl']]
+                    filter_applied.append(f"Ketinggian ≤ {preferensi_pengguna['max_ketinggian_mdpl']} mdpl")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'ketinggian_puncak_mdpl' tidak ditemukan saat filter max_ketinggian_mdpl", file=sys.stderr)
+            # Filter ketersediaan air minimal
+            if preferensi_pengguna.get('min_ketersediaan_air') is not None:
+                if cek_kolom(df_filtered, 'ketersediaan_sumber_air_skala'):
+                    df_filtered = df_filtered[df_filtered['ketersediaan_sumber_air_skala'] >= preferensi_pengguna['min_ketersediaan_air']]
+                    filter_applied.append(f"Air ≥ {preferensi_pengguna['min_ketersediaan_air']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'ketersediaan_sumber_air_skala' tidak ditemukan saat filter min_ketersediaan_air", file=sys.stderr)
+            # Filter pemandangan minimal (pastikan key konsisten)
+            if preferensi_pengguna.get('min_keindahan_pemandangan_skala') is not None:
+                if cek_kolom(df_filtered, 'keindahan_pemandangan_skala'):
+                    df_filtered = df_filtered[df_filtered['keindahan_pemandangan_skala'] >= preferensi_pengguna['min_keindahan_pemandangan_skala']]
+                    filter_applied.append(f"Pemandangan ≥ {preferensi_pengguna['min_keindahan_pemandangan_skala']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'keindahan_pemandangan_skala' tidak ditemukan saat filter min_keindahan_pemandangan_skala", file=sys.stderr)
+            # Backward compatibility: jika frontend kirim 'min_keindahan_pemandangan'
+            elif preferensi_pengguna.get('min_keindahan_pemandangan') is not None:
+                if cek_kolom(df_filtered, 'keindahan_pemandangan_skala'):
+                    df_filtered = df_filtered[df_filtered['keindahan_pemandangan_skala'] >= preferensi_pengguna['min_keindahan_pemandangan']]
+                    filter_applied.append(f"Pemandangan ≥ {preferensi_pengguna['min_keindahan_pemandangan']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'keindahan_pemandangan_skala' tidak ditemukan saat filter min_keindahan_pemandangan", file=sys.stderr)
+            # Filter jaringan komunikasi minimal
+            if preferensi_pengguna.get('min_jaringan_komunikasi') is not None:
+                if cek_kolom(df_filtered, 'jaringan_komunikasi_skala'):
+                    df_filtered = df_filtered[df_filtered['jaringan_komunikasi_skala'] >= preferensi_pengguna['min_jaringan_komunikasi']]
+                    filter_applied.append(f"Jaringan Komunikasi ≥ {preferensi_pengguna['min_jaringan_komunikasi']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'jaringan_komunikasi_skala' tidak ditemukan saat filter min_jaringan_komunikasi", file=sys.stderr)
+            # Filter kualitas fasilitas minimal
+            if preferensi_pengguna.get('min_kualitas_fasilitas_skala') is not None:
+                if cek_kolom(df_filtered, 'kualitas_fasilitas_skala'):
+                    df_filtered = df_filtered[df_filtered['kualitas_fasilitas_skala'] >= preferensi_pengguna['min_kualitas_fasilitas_skala']]
+                    filter_applied.append(f"Fasilitas ≥ {preferensi_pengguna['min_kualitas_fasilitas_skala']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'kualitas_fasilitas_skala' tidak ditemukan saat filter min_kualitas_fasilitas_skala", file=sys.stderr)
+            # Filter kualitas kemah minimal
+            if preferensi_pengguna.get('min_kualitas_kemah_skala') is not None:
+                if cek_kolom(df_filtered, 'kualitas_kemah_skala'):
+                    df_filtered = df_filtered[df_filtered['kualitas_kemah_skala'] >= preferensi_pengguna['min_kualitas_kemah_skala']]
+                    filter_applied.append(f"Kemah ≥ {preferensi_pengguna['min_kualitas_kemah_skala']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'kualitas_kemah_skala' tidak ditemukan saat filter min_kualitas_kemah_skala", file=sys.stderr)
+            # Filter perlindungan angin minimal
+            if preferensi_pengguna.get('min_perlindungan_angin') is not None:
+                if cek_kolom(df_filtered, 'perlindungan_angin_kemah_skala'):
+                    df_filtered = df_filtered[df_filtered['perlindungan_angin_kemah_skala'] >= preferensi_pengguna['min_perlindungan_angin']]
+                    filter_applied.append(f"Perlindungan Angin ≥ {preferensi_pengguna['min_perlindungan_angin']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'perlindungan_angin_kemah_skala' tidak ditemukan saat filter min_perlindungan_angin", file=sys.stderr)
+            # Filter tingkat keamanan insiden minimal
+            if preferensi_pengguna.get('min_tingkat_keamanan_insiden') is not None:
+                if cek_kolom(df_filtered, 'tingkat_insiden_skala'):
+                    df_filtered = df_filtered[df_filtered['tingkat_insiden_skala'] >= preferensi_pengguna['min_tingkat_keamanan_insiden']]
+                    filter_applied.append(f"Tingkat Keamanan Insiden ≥ {preferensi_pengguna['min_tingkat_keamanan_insiden']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'tingkat_insiden_skala' tidak ditemukan saat filter min_tingkat_keamanan_insiden", file=sys.stderr)
+            # Filter variasi lanskap minimal
+            if preferensi_pengguna.get('min_variasi_lanskap') is not None:
+                if cek_kolom(df_filtered, 'variasi_lanskap_skala'):
+                    df_filtered = df_filtered[df_filtered['variasi_lanskap_skala'] >= preferensi_pengguna['min_variasi_lanskap']]
+                    filter_applied.append(f"Variasi Lanskap ≥ {preferensi_pengguna['min_variasi_lanskap']}")
+                else:
+                    print(f"[FILTER ERROR] Kolom 'variasi_lanskap_skala' tidak ditemukan saat filter min_variasi_lanskap", file=sys.stderr)
+        except Exception as filter_error:
+            print(f"[FILTER EXCEPTION] Terjadi error saat proses filter preferensi: {filter_error}", file=sys.stderr)
+            traceback.print_exc(file=sys.stderr)
         print(f"✅ Filter diterapkan: {', '.join(filter_applied) if filter_applied else 'Tidak ada'}", file=sys.stderr)
         print(f"✅ Jalur tersisa setelah filter: {len(df_filtered)} dari {len(df_jalur)}", file=sys.stderr)
         df_jalur = df_filtered

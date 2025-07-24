@@ -82,12 +82,22 @@ const createMountain = async (req, res) => {
         url_thumbnail,
       ]
     );
-
     res.status(201).json({
       message: "Gunung berhasil ditambahkan",
       gunung: result.rows[0],
     });
   } catch (error) {
+    if (
+      error.code === "23505" &&
+      error.constraint === "gunung_nama_gunung_key"
+    ) {
+      // Duplicate nama_gunung
+      return res
+        .status(400)
+        .json({
+          message: `Gunung dengan nama '${req.body.nama_gunung}' sudah ada.`,
+        });
+    }
     logger.error("Error add gunung:", error);
     res.status(500).json({ message: "Server error" });
   }

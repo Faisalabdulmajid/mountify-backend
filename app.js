@@ -32,7 +32,9 @@ const galeriAdminRoutes = require("./routes/routes-galeri-admin");
 const bugAdminRoutes = require("./routes/routes-bug-admin");
 const tagsAdminRoutes = require("./routes/routes-tags-admin");
 const reviewAdminRoutes = require("./routes/routes-review-admin");
+
 const pengumumanAdminRoutes = require("./routes/routes-pengumuman-admin");
+const searchHistoryRoutes = require("./routes/searchHistory");
 
 const app = express();
 
@@ -113,11 +115,9 @@ if (process.env.NODE_ENV === "test" || process.env.NODE_ENV === "development") {
         ];
     const origin = req.headers.origin;
     if (origin && !allowedOrigins.includes(origin)) {
-      return res
-        .status(403)
-        .json({
-          message: "Forbidden: Origin tidak diizinkan oleh kebijakan CORS",
-        });
+      return res.status(403).json({
+        message: "Forbidden: Origin tidak diizinkan oleh kebijakan CORS",
+      });
     }
     next();
   });
@@ -142,7 +142,10 @@ console.log("✅ Auth routes mounted at /api/auth");
 app.use("/api/users", userRoutes);
 app.use("/api/profile", profileRoutes);
 
-// Pasang verifyCSRFToken hanya untuk /api/admin dan subroutenya
+// =============================
+// SECTION ADMIN (DISABLED)
+// Untuk menonaktifkan seluruh endpoint /api/admin dan subroutenya,
+// cukup komentari baris-baris berikut. Aktifkan kembali jika dibutuhkan.
 app.use("/api/admin", verifyCSRFToken, adminRoutes);
 app.use("/api/admin", verifyCSRFToken, mountainRoutes);
 app.use("/api/admin", verifyCSRFToken, trailRoutes);
@@ -155,10 +158,12 @@ app.use("/api/admin", verifyCSRFToken, bugAdminRoutes);
 app.use("/api/admin", verifyCSRFToken, tagsAdminRoutes);
 app.use("/api/admin", verifyCSRFToken, reviewAdminRoutes);
 app.use("/api/admin", verifyCSRFToken, pengumumanAdminRoutes);
+// =============================
 
 app.use("/api", publicRoutes);
 app.use("/api", chatbotRoutes);
 app.use("/api/rekomendasi", recommendationRoutes);
+app.use("/api/search-history", searchHistoryRoutes);
 
 // Health check endpoint
 app.get("/health", (req, res) => {

@@ -1523,3 +1523,177 @@
 {"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-07T17:48:48.118Z"}
 {"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-07T17:48:48.120Z"}
 {"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-07T17:48:48.122Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-08T02:16:31.805Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-08T02:16:31.808Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-08T02:16:31.809Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-08T02:16:31.965Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-08T02:16:31.971Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-08T02:16:31.972Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-08T02:16:31.973Z"}
+{"level":"error","message":"❌ FILE KUNCI DIALOGFLOW TIDAK DITEMUKAN:","timestamp":"2025-07-11T11:11:27.802Z"}
+{"level":"error","message":"Pastikan GOOGLE_APPLICATION_CREDENTIALS mengarah ke file yang benar","timestamp":"2025-07-11T11:11:27.806Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-11T11:11:28.057Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-11T11:11:28.069Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-11T11:11:28.071Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-11T11:11:28.072Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-11T17:38:07.378Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-11T17:38:07.382Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-11T17:38:07.383Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-11T17:38:07.687Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-11T17:38:07.697Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-11T17:38:07.699Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-11T17:38:07.701Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-11T17:39:08.857Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-11T17:39:08.862Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-11T17:39:08.863Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-11T17:39:09.149Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-11T17:39:09.181Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-11T17:39:09.182Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-11T17:39:09.188Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-11T17:39:22.077Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-11T17:39:22.080Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-11T17:39:22.081Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-11T17:39:22.259Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-11T17:39:22.268Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-11T17:39:22.268Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-11T17:39:22.269Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-11T17:41:49.023Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-12T02:12:25.025Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-12T02:12:25.029Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-12T02:12:25.029Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-12T02:12:25.259Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-12T02:12:25.264Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-12T02:12:25.265Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-12T02:12:25.265Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-22T03:00:13.659Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-22T03:00:13.662Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-22T03:00:13.663Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-22T03:00:13.863Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-22T03:00:13.869Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-22T03:00:13.870Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-22T03:00:13.871Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-22T22:40:00.388Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-22T22:40:00.390Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-22T22:40:00.391Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-22T22:40:00.568Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-22T22:40:00.575Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-22T22:40:00.576Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-22T22:40:00.576Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-23T17:45:46.627Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-23T17:45:46.630Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-23T17:45:46.632Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-23T17:45:46.846Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-23T17:45:46.862Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-23T17:45:46.863Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-23T17:45:46.864Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-23T17:48:14.283Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T02:21:09.902Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T02:21:09.905Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T02:21:09.906Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T02:21:10.079Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T02:21:10.086Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T02:21:10.086Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T02:21:10.087Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T02:24:44.969Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T02:24:44.973Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T02:24:44.974Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T02:24:45.186Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T02:24:45.192Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T02:24:45.192Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T02:24:45.193Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:27:41.454Z"}
+{"level":"error","message":"Proses Python error dengan kode: 1","timestamp":"2025-07-24T02:27:42.860Z"}
+{"level":"error","message":"Pesan error dari Python:","timestamp":"2025-07-24T02:27:42.861Z"}
+{"level":"error","message":"Error pada endpoint rekomendasi-gunung: Terjadi kesalahan saat menjalankan sistem rekomendasi.","stack":"Error: Terjadi kesalahan saat menjalankan sistem rekomendasi.\n    at ChildProcess.<anonymous> (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\services\\recommendationService.js:52:13)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)","timestamp":"2025-07-24T02:27:42.863Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:28:42.336Z"}
+{"level":"error","message":"Proses Python error dengan kode: 1","timestamp":"2025-07-24T02:28:43.191Z"}
+{"level":"error","message":"Pesan error dari Python:","timestamp":"2025-07-24T02:28:43.192Z"}
+{"level":"error","message":"Error pada endpoint rekomendasi-gunung: Terjadi kesalahan saat menjalankan sistem rekomendasi.","stack":"Error: Terjadi kesalahan saat menjalankan sistem rekomendasi.\n    at ChildProcess.<anonymous> (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\services\\recommendationService.js:52:13)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)","timestamp":"2025-07-24T02:28:43.193Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:31:26.076Z"}
+{"level":"error","message":"Proses Python error dengan kode: 1","timestamp":"2025-07-24T02:31:26.448Z"}
+{"level":"error","message":"Pesan error dari Python:","timestamp":"2025-07-24T02:31:26.448Z"}
+{"level":"error","message":"Error pada endpoint rekomendasi-gunung: Terjadi kesalahan saat menjalankan sistem rekomendasi.","stack":"Error: Terjadi kesalahan saat menjalankan sistem rekomendasi.\n    at ChildProcess.<anonymous> (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\services\\recommendationService.js:52:13)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)","timestamp":"2025-07-24T02:31:26.449Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:31:34.206Z"}
+{"level":"error","message":"Proses Python error dengan kode: 1","timestamp":"2025-07-24T02:31:34.475Z"}
+{"level":"error","message":"Pesan error dari Python:","timestamp":"2025-07-24T02:31:34.476Z"}
+{"level":"error","message":"Error pada endpoint rekomendasi-gunung: Terjadi kesalahan saat menjalankan sistem rekomendasi.","stack":"Error: Terjadi kesalahan saat menjalankan sistem rekomendasi.\n    at ChildProcess.<anonymous> (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\services\\recommendationService.js:52:13)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)","timestamp":"2025-07-24T02:31:34.476Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:33:49.022Z"}
+{"level":"error","message":"Proses Python error dengan kode: 1","timestamp":"2025-07-24T02:33:49.445Z"}
+{"level":"error","message":"Pesan error dari Python:","timestamp":"2025-07-24T02:33:49.446Z"}
+{"level":"error","message":"Error pada endpoint rekomendasi-gunung: Terjadi kesalahan saat menjalankan sistem rekomendasi.","stack":"Error: Terjadi kesalahan saat menjalankan sistem rekomendasi.\n    at ChildProcess.<anonymous> (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\services\\recommendationService.js:52:13)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)","timestamp":"2025-07-24T02:33:49.446Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:36:04.588Z"}
+{"level":"error","message":"Proses Python error dengan kode: 1","timestamp":"2025-07-24T02:36:05.001Z"}
+{"level":"error","message":"Pesan error dari Python:","timestamp":"2025-07-24T02:36:05.002Z"}
+{"level":"error","message":"Error pada endpoint rekomendasi-gunung: Terjadi kesalahan saat menjalankan sistem rekomendasi.","stack":"Error: Terjadi kesalahan saat menjalankan sistem rekomendasi.\n    at ChildProcess.<anonymous> (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\services\\recommendationService.js:52:13)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)","timestamp":"2025-07-24T02:36:05.002Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:36:30.203Z"}
+{"level":"error","message":"Proses Python error dengan kode: 1","timestamp":"2025-07-24T02:36:30.522Z"}
+{"level":"error","message":"Pesan error dari Python:","timestamp":"2025-07-24T02:36:30.523Z"}
+{"level":"error","message":"Error pada endpoint rekomendasi-gunung: Terjadi kesalahan saat menjalankan sistem rekomendasi.","stack":"Error: Terjadi kesalahan saat menjalankan sistem rekomendasi.\n    at ChildProcess.<anonymous> (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\services\\recommendationService.js:52:13)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)","timestamp":"2025-07-24T02:36:30.524Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-24T02:38:11.449Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T02:40:14.211Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T02:40:14.214Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T02:40:14.214Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T02:40:14.344Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T02:40:14.350Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T02:40:14.350Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T02:40:14.351Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T02:40:28.435Z"}
+{"level":"info","message":"✅ Python engine response received successfully","timestamp":"2025-07-24T02:40:42.967Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T11:36:50.689Z"}
+{"level":"info","message":"✅ Python engine response received successfully","timestamp":"2025-07-24T11:37:03.137Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T13:32:28.433Z"}
+{"level":"info","message":"✅ Python engine response received successfully","timestamp":"2025-07-24T13:32:32.002Z"}
+{"level":"info","max_estimasi_waktu_jam":48,"max_kesulitan_skala":7,"max_ketinggian_mdpl":5000,"message":"Menerima & MEMPROSES permintaan rekomendasi GUNUNG via form:","min_jaringan_komunikasi":3,"min_keamanan_skala":6,"min_keindahan_pemandangan_skala":6,"min_ketersediaan_air":5,"min_kualitas_fasilitas_skala":5,"min_kualitas_kemah_skala":5,"min_perlindungan_angin":5,"min_tingkat_keamanan_insiden":5,"min_variasi_lanskap":5,"timestamp":"2025-07-24T13:39:43.510Z"}
+{"level":"info","message":"✅ Python engine response received successfully","timestamp":"2025-07-24T13:39:48.234Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-24T13:57:11.301Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T15:46:52.439Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T15:46:52.447Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T15:46:52.450Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T15:46:52.724Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T15:46:52.737Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T15:46:52.737Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T15:46:52.738Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-24T15:47:52.288Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T15:48:16.369Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T15:48:16.373Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T15:48:16.374Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T15:48:16.554Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T15:48:16.564Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T15:48:16.565Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T15:48:16.566Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-24T15:48:50.832Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T15:48:54.678Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T15:48:54.681Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T15:48:54.682Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T15:48:54.940Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T15:48:54.952Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T15:48:54.953Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T15:48:54.953Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-24T15:48:58.406Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T15:49:09.322Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T15:49:09.327Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T15:49:09.330Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T15:49:09.628Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T15:49:09.639Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T15:49:09.640Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T15:49:09.641Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-24T15:49:52.214Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T15:50:01.814Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T15:50:01.818Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T15:50:01.819Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T15:50:02.003Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T15:50:02.010Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T15:50:02.011Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T15:50:02.011Z"}
+{"code":"23505","constraint":"gunung_nama_gunung_key","detail":"Key (nama_gunung)=(Gunung Rinjani) already exists.","file":"nbtinsert.c","length":227,"level":"error","line":"673","message":"Error add gunung: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"","name":"error","routine":"_bt_check_unique","schema":"public","severity":"ERROR","stack":"error: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"\n    at D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createMountain (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\controllers\\mountainController.js:75:20)","table":"gunung","timestamp":"2025-07-24T15:53:29.038Z"}
+{"code":"23505","constraint":"gunung_nama_gunung_key","detail":"Key (nama_gunung)=(Gunung Rinjani) already exists.","file":"nbtinsert.c","length":227,"level":"error","line":"673","message":"Error add gunung: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"","name":"error","routine":"_bt_check_unique","schema":"public","severity":"ERROR","stack":"error: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"\n    at D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createMountain (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\controllers\\mountainController.js:75:20)","table":"gunung","timestamp":"2025-07-24T15:53:41.191Z"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","timestamp":"2025-07-24T15:54:04.567Z"}
+{"level":"info","message":"✅ Dialogflow client berhasil diinisialisasi","timestamp":"2025-07-24T15:54:08.074Z"}
+{"level":"info","message":"📝 Project ID: mountifyassistant-awok","timestamp":"2025-07-24T15:54:08.077Z"}
+{"level":"info","message":"🌐 Language Code: id","timestamp":"2025-07-24T15:54:08.078Z"}
+{"level":"info","message":"✅ Swagger UI tersedia di http://localhost:5000/api-docs","timestamp":"2025-07-24T15:54:08.199Z"}
+{"level":"info","message":"🚀 Server berjalan di http://localhost:5000","timestamp":"2025-07-24T15:54:08.205Z"}
+{"level":"info","message":"📚 API Documentation: http://localhost:5000/api-docs","timestamp":"2025-07-24T15:54:08.205Z"}
+{"level":"info","message":"🏥 Health Check: http://localhost:5000/health","timestamp":"2025-07-24T15:54:08.206Z"}
+{"code":"23505","constraint":"gunung_nama_gunung_key","detail":"Key (nama_gunung)=(Gunung Cikuray) already exists.","file":"nbtinsert.c","length":227,"level":"error","line":"673","message":"Error add gunung: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"","name":"error","routine":"_bt_check_unique","schema":"public","severity":"ERROR","stack":"error: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"\n    at D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createMountain (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\controllers\\mountainController.js:75:20)","table":"gunung","timestamp":"2025-07-24T16:00:17.791Z"}
+{"code":"23505","constraint":"gunung_nama_gunung_key","detail":"Key (nama_gunung)=(Gunung Cikuray) already exists.","file":"nbtinsert.c","length":227,"level":"error","line":"673","message":"Error add gunung: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"","name":"error","routine":"_bt_check_unique","schema":"public","severity":"ERROR","stack":"error: duplicate key value violates unique constraint \"gunung_nama_gunung_key\"\n    at D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createMountain (D:\\Skripsi\\sistem_rekomendasi_gunung\\backend\\controllers\\mountainController.js:75:20)","table":"gunung","timestamp":"2025-07-24T16:05:38.997Z"}
