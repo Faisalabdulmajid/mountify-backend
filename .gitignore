@@ -1,0 +1,4 @@
+# Ignore Google Cloud credentials and other sensitive files
+config/credentials/*.json
+.env
+node_modules/
