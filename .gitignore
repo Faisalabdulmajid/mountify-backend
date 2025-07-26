@@ -1,3 +1,23 @@
+# Ignore environment files
+.env
+
+# Ignore uploaded files
+public/uploads/
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore node modules
+node_modules/
+
+# Ignore OS/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Ignore Python cache (jika ada)
+rekomendasi_api/__pycache__/
 # Ignore Google Cloud credentials and other sensitive files
 config/credentials/*.json
 .env
