@@ -14,62 +14,77 @@ class RecommendationService {
   }
 
   async getRecommendations(preferences) {
-    return new Promise((resolve, reject) => {
-      if (!fs.existsSync(this.pythonScriptPath)) {
-        logger.error(
-          "Error: Script Python tidak ditemukan di",
-          this.pythonScriptPath
-        );
-        return reject(
-          new Error("Konfigurasi server rekomendasi belum lengkap.")
-        );
-      }
-
-      const preferencesJson = JSON.stringify(preferences);
-      const pythonProcess = spawn("python", [
-        this.pythonScriptPath,
-        preferencesJson,
-      ]);
-
-      let resultData = "";
-      let errorData = "";
-
-      pythonProcess.stdout.on("data", (data) => {
-        resultData += data.toString();
-        console.log("[PYTHON STDOUT]", data.toString()); // DEBUG: tampilkan output Python stdout
-      });
-
-      pythonProcess.stderr.on("data", (data) => {
-        errorData += data.toString();
-        console.error("[PYTHON STDERR]", data.toString()); // DEBUG: tampilkan output Python stderr
-      });
-
-      pythonProcess.on("close", (code) => {
-        if (code !== 0) {
-          logger.error(`Proses Python error dengan kode: ${code}`);
-          logger.error("Pesan error dari Python:", errorData);
+    try {
+      return await new Promise((resolve, reject) => {
+        if (!fs.existsSync(this.pythonScriptPath)) {
+          logger.error(
+            "Error: Script Python tidak ditemukan di",
+            this.pythonScriptPath
+          );
           return reject(
-            new Error("Terjadi kesalahan saat menjalankan sistem rekomendasi.")
+            new Error("Konfigurasi server rekomendasi belum lengkap.")
           );
         }
 
-        try {
-          const finalResult = JSON.parse(resultData);
+        const preferencesJson = JSON.stringify(preferences);
+        const pythonProcess = spawn("python", [
+          this.pythonScriptPath,
+          preferencesJson,
+        ]);
 
-          // Log untuk debugging
-          logger.info("✅ Python engine response received successfully");
-          logger.debug("Response metadata:", finalResult.metadata);
+        let resultData = "";
+        let errorData = "";
 
-          resolve(finalResult);
-        } catch (parseError) {
-          logger.error("Gagal mem-parsing JSON dari skrip Python:", parseError);
-          logger.error("Data mentah yang diterima:", resultData);
-          reject(
-            new Error("Terjadi kesalahan format data dari sistem rekomendasi.")
-          );
-        }
+        pythonProcess.stdout.on("data", (data) => {
+          resultData += data.toString();
+          console.log("[PYTHON STDOUT]", data.toString()); // DEBUG: tampilkan output Python stdout
+        });
+
+        pythonProcess.stderr.on("data", (data) => {
+          errorData += data.toString();
+          console.error("[PYTHON STDERR]", data.toString()); // DEBUG: tampilkan output Python stderr
+        });
+
+        pythonProcess.on("close", (code) => {
+          if (code !== 0) {
+            logger.error(`Proses Python error dengan kode: ${code}`);
+            logger.error("Pesan error dari Python:", errorData);
+            return reject(
+              new Error(
+                "Terjadi kesalahan saat menjalankan sistem rekomendasi."
+              )
+            );
+          }
+
+          try {
+            const finalResult = JSON.parse(resultData);
+
+            // Log untuk debugging
+            logger.info("✅ Python engine response received successfully");
+            logger.debug("Response metadata:", finalResult.metadata);
+
+            resolve(finalResult);
+          } catch (parseError) {
+            logger.error(
+              "Gagal mem-parsing JSON dari skrip Python:",
+              parseError
+            );
+            logger.error("Data mentah yang diterima:", resultData);
+            reject(
+              new Error(
+                "Terjadi kesalahan format data dari sistem rekomendasi."
+              )
+            );
+          }
+        });
       });
-    });
+    } catch (err) {
+      logger.error(
+        "Promise error di getRecommendations:",
+        err && err.stack ? err.stack : err
+      );
+      throw err;
+    }
   }
 
   translateDialogflowParams(params) {
